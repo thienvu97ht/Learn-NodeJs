@@ -1,0 +1,19 @@
+{
+  "name": "Learn-NodeJs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/thienvu97ht/Learn-NodeJs.git",
+  "author": "Duong Vu <thien.vu97ht123@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  }
+}
