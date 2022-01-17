@@ -13,7 +13,7 @@ const UserSchema = new Schema({
   },
   decks: [
     {
-      type: Schema.type.ObjectId,
+      type: Schema.Types.ObjectId,
       ref: "Deck",
     },
   ],
