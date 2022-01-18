@@ -1,6 +1,7 @@
 // import from libs
 const router = require("express-promise-router")();
 
+const { route } = require("express/lib/router");
 // import from project
 const UserController = require("../controllers/user");
 
@@ -11,5 +12,10 @@ router
   .get(UserController.getUser)
   .put(UserController.replaceUser)
   .patch(UserController.updateUser);
+
+router
+  .route("/:userID/decks")
+  .get(UserController.getUserDesks)
+  .post(UserController.newUserDesks);
 
 module.exports = router;
